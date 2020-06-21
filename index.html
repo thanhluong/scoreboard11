@@ -1,0 +1,2394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Olympic Miền Trung - Tây Nguyên khối lớp 11 lần 1 Rankings - LQDOJ: Le Quy Don Online Judge</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="None">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicons-->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#FFBB33">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#FFBB33">
+    <meta property="og:site_name" content="LQDOJ: Le Quy Don Online Judge">
+    <meta property="og:url"
+          content="http:///contest/centralolp11/ranking/">
+        <meta property="og:description" content="None">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script>window.bad_browser = true</script>
+    <![endif]-->
+<link rel="stylesheet" href="http://lqdoj.edu.vn/static/cache/css/output.6c3d605e9736.css" type="text/css">    <link rel="canonical"
+          href="http:///contest/centralolp11/ranking/">
+    <style>
+        #content-left {
+            overflow-x: auto;
+        }
+
+        #users-table .username {
+            min-width: 20em;
+        }
+
+        #users-table td {
+            height: 2.5em;
+        }
+
+        #users-table a {
+            display: block;
+        }
+
+        .userinfo a, .user-name a, .user-name form {
+            display: inline !important;
+        }
+
+        #users-table th a, #users-table th a:link, #users-table th a:visited {
+            color: white;
+        }
+
+        #users-table th a:hover {
+            color: #0F0;
+        }
+
+        #users-table td a:hover {
+            text-decoration: underline;
+        }
+
+        .first-solve {
+            background: #00f9a1;
+        }
+
+        .rank {
+            min-width: 2.5em
+        }
+
+        .points {
+            min-width: 4em;
+        }
+
+        .disqualified {
+            background-color: #ffa8a8 !important;
+        }
+
+        .full-score, .full-score a {
+            font-weight: bold;
+            color: green;
+        }
+
+        .partial-score, .partial-score a {
+            color: green;
+        }
+
+        .failed-score, .failed-score a {
+            font-weight: bold;
+            color: red;
+        }
+
+        .pretest-full-score, .pretest-full-score a {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        .pretest-partial-score, .pretest-partial-score a {
+            color: #2980b9;
+        }
+
+        .pretest-failed-score, .pretest-failed-score a {
+            font-weight: bold;
+            color: red;
+        }
+
+        .user-points {
+            font-weight: bold;
+            color: black;
+        }
+
+        .solving-time {
+            color: gray;
+            font-weight: normal;
+            font-size: 0.75em;
+            padding-bottom: -0.75em;
+        }
+
+        .point-denominator {
+            border-top: 1px solid gray;
+            font-size: 0.7em;
+        }
+
+        .start-time {
+            display: none;
+        }
+
+        .user-name {
+            position: relative;
+        }
+
+        .organization-column {
+            display: none;
+            text-align: left !important;
+            border-right: none !important;
+        }
+
+        .organization-column a {
+            color: gray !important;
+            font-weight: 600;
+        }
+    </style>
+
+
+    <style>
+        .select2-selection__arrow {
+            display: none;
+        }
+
+        .select2-selection__rendered {
+            cursor: text;
+            overflow: initial !important
+        }
+
+        .select2-results__option--highlighted {
+            background-color: #DEDEDE !important;
+        }
+
+        .select2-results__option {
+            white-space: nowrap;
+        }
+
+        #search-contest, #search-contest + .select2 {
+            margin-top: 0.5em;
+        }
+
+        #search-contest {
+            width: 200px;
+            height: 2.3em;
+        }
+    </style>
+
+<script src="http://lqdoj.edu.vn/static/cache/js/output.6721e5112e7a.js"></script>        <script type="text/javascript">
+            $(function () {
+                $('a.disqualify-participation').click(function (e) {
+                    e.preventDefault();
+                    if (e.ctrlKey || e.metaKey || confirm("Are you sure you want to disqualify this participation?"))
+                        $(this).closest('form').submit();
+                })
+                $('a.un-disqualify-participation').click(function (e) {
+                    e.preventDefault();
+                    if (e.ctrlKey || e.metaKey || confirm("Are you sure you want to un-disqualify this participation?"))
+                        $(this).closest('form').submit();
+                })
+            });
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('td.user').find('a.user-name').click(function (e) {
+                    var data = $(this).siblings('.edit-participation');
+                    if (e.altKey && data.length) {
+                        window.open(data.attr('data-link'), '_blank');
+                        return false;
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                window.install_tooltips = function () {
+                    $('td.user').find('a.user-name').each(function () {
+                        var link = $(this);
+                        link.mouseenter(function (e) {
+                            var start_time = link.siblings('.start-time').text();
+                            link.addClass('tooltipped tooltipped-e').attr('aria-label', start_time);
+                        }).mouseleave(function (e) {
+                            link.removeClass('tooltipped tooltipped-e').removeAttr('aria-label');
+                        });
+                    });
+                };
+
+                install_tooltips();
+            });
+        </script>
+    <script type="text/javascript">
+
+        function scoretimeComparison(sub1, sub2) {
+            if (!sub2) return true;
+            return sub1['score'] > sub2['score'] || (sub1['score'] === sub2['score'] && sub1['time'] < sub2['time']);
+        }
+
+        function highlightFirstSolve() {
+            // bucket to store submissions by problems
+            let bestSubmissions = {};
+
+            // get information
+            $('td a').each(function() {
+                let td = $(this)[0]
+                let link = td['attributes']['href']['value']
+                if (link.includes('submissions')) {
+                    let scoreAndTime = (td.innerText.split('\n'))
+                    let linkElements = link.split('/')
+
+                    // get information
+                    let problem = linkElements[linkElements.length - 2];
+                    let score = parseFloat(scoreAndTime[0])
+                    let time = new Date('05/04/2020 ' + scoreAndTime[1])
+
+                    let curSubmission = {
+                        'td': $(this).parent(),
+                        'score': score,
+                        'time': time 
+                    }
+
+                    // update best submissions
+                    let curBest = bestSubmissions[problem]
+
+                    if (scoretimeComparison(curSubmission, curBest) && score) {
+                        bestSubmissions[problem] = curSubmission;
+                    } 
+                }
+            })
+            for (let problem in bestSubmissions) {
+                bestSubmissions[problem]['td'].addClass('first-solve')
+            }
+        }
+
+        $(function () {
+            var url = '/contest/centralolp11/participations/__username__';
+            var placeholder = $('#search-contest').replaceWith($('<select>').attr({
+                id: 'search-contest'
+            })).attr('placeholder');
+
+            $('#search-contest').select2({
+                placeholder: placeholder,
+                ajax: {
+                    url: '/widgets/select2/contest_users/centralolp11'
+                },
+                minimumInputLength: 1,
+                escapeMarkup: function (markup) {
+                    return markup;
+                },
+                templateResult: function (data, container) {
+                    return ('<img class="user-search-image" src="' + data.gravatar_url + '" width="24" height="24">' +
+                        '<span class="' + data.display_rank + ' user-search-name">' + data.text + '</span>');
+                }
+            }).on('change', function () {
+                window.location.href = url.replace('__username__', $(this).val());
+            });
+
+            $('#show-organizations-checkbox').click(function () {
+                $('.organization-column').toggle();
+            });
+            highlightFirstSolve();
+            
+        });
+    </script>
+<script type="text/javascript">
+    $(function () {
+        $('.leaving-forever').click(function () {
+            return confirm('Are you sure you want to leave?\n' +
+                'You cannot come back to a virtual participation. You will have to start a new one.');
+        });
+
+        $('.first-join').click(function () {
+            return confirm('Are you sure you want to join?\n' +
+                'Joining a contest starts your timer, after which it becomes unstoppable.');
+        });
+    });
+</script>    <script>
+        $(function () {
+            $('#search-handle').replaceWith($('<select>').attr({
+                id: 'search-handle',
+                name: 'handle',
+                onchange: 'form.submit()'
+            }));
+            var in_user_redirect = false;
+            $('#search-handle').select2({
+                placeholder: 'Search by handle...',
+                ajax: {
+                    url: '/widgets/select2/user_search'
+                },
+                minimumInputLength: 1,
+                escapeMarkup: function (markup) {
+                    return markup;
+                },
+                templateResult: function (data, container) {
+                    return $('<span>')
+                        .append($('<img>', {
+                            'class': 'user-search-image', src: data.gravatar_url,
+                            width: 24, height: 24
+                        }))
+                        .append($('<span>', {'class': data.display_rank + ' user-search-name'}).text(data.text))
+                        .append($('<a>', {href: '/user/' + data.text, 'class': 'user-redirect'})
+                            .append($('<i>', {'class': 'fa fa-mail-forward'}))
+                            .mouseover(function () {
+                                in_user_redirect = true;
+                            }).mouseout(function () {
+                                in_user_redirect = false;
+                            }));
+                }
+            }).on('select2:selecting', function () {
+                return !in_user_redirect;
+            });
+
+            var $last = null;
+            $(window).on('hashchange', function () {
+                var hash = window.location.hash;
+                if (hash.startsWith('#!')) {
+                    var $user = $('#user-' + hash.substring(2)).addClass('highlight');
+                    if ($user) {
+                        $(document).scrollTop($user.position().top - 50);
+                        if ($last !== null) $last.removeClass('highlight');
+                        $last = $user;
+                    }
+                }
+            }).trigger('hashchange');
+        });
+    </script>
+
+        <script>
+            window.user = {
+                email: 'doannguyenthanhluong@gmail.com',
+                id: '11',
+                name: 'CaiWinDao'
+            };
+        </script>
+
+
+        <script type="text/javascript">/</script>
+
+    <noscript>
+        <style>
+            #content {
+                margin: 80px auto auto;
+            }
+
+            #navigation {
+                top: 27px;
+            }
+        </style>
+    </noscript>
+    <style>
+    </style>
+</head>
+<body>
+<svg width="0" height="0" style="display: block">
+    <defs>
+        <clipPath id="rating-clip"><circle cx="8" cy="8" r="7"/></clipPath>
+    </defs>
+</svg>
+<nav id="navigation" class="unselectable">
+    <div id="nav-container">
+        <a id="navicon" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+        <ul id="nav-list">
+            <li class="home-nav-element"><a href="/">    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/IOI_logo.png" alt="LQDOJ" height="44" style="border: none">
+</a></li>
+            <li class="home-nav-element"><span class="nav-divider"></span></li>
+            <li class="home-menu-item"><a href="/" class="nav-home">Home</a></li>
+                <li>
+                    <a href="/problems/" class="nav-problems">
+                        Problems
+                    </a>
+                </li>
+                <li>
+                    <a href="/submissions/" class="nav-submit">
+                        Submissions
+                    </a>
+                </li>
+                <li>
+                    <a href="/users/" class="nav-user">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a href="/contests/" class="nav-contest active">
+                        Contests
+                    </a>
+                </li>
+                <li>
+                    <a href="/chat/" class="nav-chat">
+                        Chat
+                    </a>
+<ul>                <li>
+                    <a href="/post/12-feature-suggestions" class="nav-features">
+                        Suggestions
+                    </a>
+                </li>
+</ul>                </li>
+                <li>
+                    <a href="/about/" class="nav-about">
+                        About
+                    </a>
+<ul>                <li>
+                    <a href="/status/" class="nav-status">
+                        Status
+                    </a>
+                </li>
+</ul>                </li>
+        </ul>
+
+        <span id="user-links">
+                <ul>
+                    <li>
+                        <a href="/user">
+                            <span>
+                                <span>Hello</span>
+                            </span>
+                        </a>
+                        <ul style="width: 150px">
+                                <li><a href="/admin/">Admin</a></li>
+                            <li><a href="/edit/profile/">Edit profile</a></li>
+                                <li>
+                                    <form action="/accounts/logout/" method="POST">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                                        <button type="submit">Log out</button>
+                                    </form>
+                                </li>
+                        </ul>
+                    </li>
+                </ul>
+        </span>
+    </div>
+    <div id="nav-shadow"></div>
+</nav>
+<div id="page-container">
+    <noscript>
+        <div id="noscript">This site works best with JavaScript enabled.</div>
+    </noscript>
+    <br>
+    <main id="content">
+
+<div class="page-title">
+    <div class="tabs">
+        <h2>Olympic Miền Trung - Tây Nguyên khối lớp 11 lần 1</h2>
+        <span class="spacer"></span>
+        <ul>
+        <li class="tab"><a href="/contest/centralolp11"><i class="tab-icon fa fa-info-circle"></i> Info</a></li>
+
+            <li class="tab"><a href="/contest/centralolp11/stats"><i class="tab-icon fa fa-pie-chart"></i> Statistics</a></li>
+
+
+                <li class="tab active"><a href="/contest/centralolp11/ranking/"><i class="tab-icon fa fa-bar-chart"></i> Rankings</a></li>
+
+                <li class="tab"><a href="/contest/centralolp11/participations"><i class="tab-icon fa fa-users"></i> Participation</a></li>
+
+                <li class="tab"><a href="/contest/centralolp11/moss"><i class="tab-icon fa fa-gavel"></i> MOSS</a></li>
+
+            <li class="tab"><a href="/admin/judge/contest/43/change/"><i class="tab-icon fa fa-edit"></i> Edit</a></li>
+
+            <li class="tab"><a href="/contest/centralolp11/clone"><i class="tab-icon fa fa-copy"></i> Clone</a></li>
+
+
+                    <form action="/contest/centralolp11/join" method="post"
+                          class="contest-join-pseudotab unselectable button full">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                        <input type="submit" value="Spectate contest">
+                    </form>
+        </ul>
+    </div>
+</div>        <div id="content-body">    <div id="common-content">
+        <div id="content-left" class="users">
+
+            <table id="users-table" class="table">
+    <div style="margin-bottom: 0.5em">
+        <input id="show-organizations-checkbox" type="checkbox" style="vertical-align: bottom">
+        <label for="show-organizations-checkbox" style="vertical-align: bottom">Show organizations</label>
+    </div>
+<thead>
+<tr>
+    <th class="header rank">Rank</th>
+    <th class="organization-column">Organization</th>
+    <th class="header username">Username</th>
+        <th class="points header"><a href="/contest/centralolp11/rank/goldbach/">1
+            <div class="point-denominator">100</div>
+        </a></th>
+        <th class="points header"><a href="/contest/centralolp11/rank/pig/">2
+            <div class="point-denominator">100</div>
+        </a></th>
+        <th class="points header"><a href="/contest/centralolp11/rank/robot/">3
+            <div class="point-denominator">100</div>
+        </a></th>
+        <th class="points header"><a href="/contest/centralolp11/rank/virus/">4
+            <div class="point-denominator">100</div>
+        </a></th>
+
+    <th class="header points">
+        Points    </th>
+</tr>
+</thead>
+
+<tbody>
+    <tr id="user-Play_With_Mino" >
+        <td>1</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/Play_With_Mino">Play_With_Mino</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2633">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2633/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Play_With_Mino/goldbach/">100<div class="solving-time">00:12:18</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Play_With_Mino/pig/">100<div class="solving-time">00:27:11</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Play_With_Mino/robot/">100<div class="solving-time">01:10:28</div></a></td>
+        <td></td>
+    <td class="user-points">300<div class="solving-time">01:49:58</div></td>
+    </tr>
+    <tr id="user-bossudw" >
+        <td>2</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/bossudw">bossudw</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2498">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2498/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/bossudw/goldbach/">100<div class="solving-time">00:07:20</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/bossudw/pig/">100<div class="solving-time">00:36:49</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/bossudw/robot/">100<div class="solving-time">01:08:29</div></a></td>
+        <td></td>
+    <td class="user-points">300<div class="solving-time">01:52:39</div></td>
+    </tr>
+    <tr id="user-nghia051" >
+        <td>3</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/21-nguyn-du-djk-lk">Nguyễn Du - Đắk Lắk</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/nghia051">nghia051</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2557">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2557/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nghia051/goldbach/">100<div class="solving-time">00:07:31</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nghia051/pig/">100<div class="solving-time">00:33:05</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/nghia051/robot/">50<div class="solving-time">01:09:44</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/nghia051/virus/">48<div class="solving-time">01:09:50</div></a></td>
+    <td class="user-points">298<div class="solving-time">03:00:11</div></td>
+    </tr>
+    <tr id="user-HynDuf" >
+        <td>4</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/HynDuf">HynDuf</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2480">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2480/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/HynDuf/goldbach/">100<div class="solving-time">00:13:54</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/HynDuf/pig/">100<div class="solving-time">00:26:49</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/HynDuf/robot/">50<div class="solving-time">00:58:47</div></a></td>
+        <td></td>
+    <td class="user-points">250<div class="solving-time">01:39:32</div></td>
+    </tr>
+    <tr id="user-anhkha2003" >
+        <td>5</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/11-cuom1999s-fanclub">Fanclub</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-master user"><a href="/user/anhkha2003">anhkha2003</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2482">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2482/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/anhkha2003/goldbach/">100<div class="solving-time">00:07:30</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/anhkha2003/pig/">100<div class="solving-time">00:30:29</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/anhkha2003/robot/">50<div class="solving-time">01:05:17</div></a></td>
+        <td></td>
+    <td class="user-points">250<div class="solving-time">01:43:16</div></td>
+    </tr>
+    <tr id="user-danglenguyen" >
+        <td>6</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/danglenguyen">danglenguyen</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2637">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2637/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/danglenguyen/goldbach/">100<div class="solving-time">00:14:36</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/danglenguyen/pig/">100<div class="solving-time">00:33:54</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/danglenguyen/robot/">50<div class="solving-time">01:03:30</div></a></td>
+        <td></td>
+    <td class="user-points">250<div class="solving-time">01:52:02</div></td>
+    </tr>
+    <tr id="user-a14789654" >
+        <td>7</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/25-2020-le-quy-djon-qung-tr">Lê Quý Đôn - Q.Trị</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/a14789654">a14789654</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2469">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2469/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/a14789654/goldbach/">100<div class="solving-time">00:07:54</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/a14789654/pig/">75<div class="solving-time">00:36:44</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/a14789654/robot/">50<div class="solving-time">01:07:49</div></a></td>
+        <td></td>
+    <td class="user-points">225<div class="solving-time">01:52:27</div></td>
+    </tr>
+    <tr id="user-pvannvuILQD" >
+        <td>8</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/25-2020-le-quy-djon-qung-tr">Lê Quý Đôn - Q.Trị</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-master user"><a href="/user/pvannvuILQD">pvannvuILQD</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2556">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2556/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/pvannvuILQD/goldbach/">100<div class="solving-time">00:08:09</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/pvannvuILQD/pig/">100<div class="solving-time">00:31:41</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">00:39:50</div></td>
+    </tr>
+    <tr id="user-BlenDMinh" >
+        <td>9</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/BlenDMinh">BlenDMinh</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2486">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2486/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/BlenDMinh/goldbach/">100<div class="solving-time">00:09:57</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/BlenDMinh/pig/">100<div class="solving-time">00:30:12</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">00:40:09</div></td>
+    </tr>
+    <tr id="user-quangphat18ti" >
+        <td>10</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/quangphat18ti">quangphat18ti</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2585">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2585/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/quangphat18ti/goldbach/">100<div class="solving-time">00:13:34</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/quangphat18ti/pig/">100<div class="solving-time">00:36:37</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">00:50:11</div></td>
+    </tr>
+    <tr id="user-Chiroxame9" >
+        <td>11</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/Chiroxame9">Chiroxame9</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2458">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2458/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Chiroxame9/goldbach/">100<div class="solving-time">00:12:53</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Chiroxame9/pig/">100<div class="solving-time">00:38:07</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">00:51:01</div></td>
+    </tr>
+    <tr id="user-18ti_nmnhat" >
+        <td>12</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/18ti_nmnhat">18ti_nmnhat</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2587">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2587/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/18ti_nmnhat/goldbach/">100<div class="solving-time">00:10:47</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/18ti_nmnhat/pig/">100<div class="solving-time">00:44:24</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">00:55:12</div></td>
+    </tr>
+    <tr id="user-ltt_huy" >
+        <td>13</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/24-2020-le-thanh-tong-qung-nam">Lê Thánh Tông, Q.Nam</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/ltt_huy">ltt_huy</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2459">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2459/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/ltt_huy/goldbach/">100<div class="solving-time">00:14:00</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/ltt_huy/pig/">100<div class="solving-time">00:42:07</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">00:56:08</div></td>
+    </tr>
+    <tr id="user-cbl_minhgiang" >
+        <td>14</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/cbl_minhgiang">cbl_minhgiang</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2483">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2483/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/cbl_minhgiang/goldbach/">100<div class="solving-time">00:12:41</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/cbl_minhgiang/pig/">100<div class="solving-time">00:49:33</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">01:02:14</div></td>
+    </tr>
+    <tr id="user-HMD" >
+        <td>15</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-master user"><a href="/user/HMD">HMD</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2496">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2496/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/HMD/goldbach/">100<div class="solving-time">00:16:49</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/HMD/pig/">100<div class="solving-time">00:48:29</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">01:05:19</div></td>
+    </tr>
+    <tr id="user-adung1211" >
+        <td>16</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/adung1211">adung1211</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2588">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2588/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/adung1211/goldbach/">100<div class="solving-time">00:20:03</div></a></td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/adung1211/pig/">100<div class="solving-time">01:04:45</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">200<div class="solving-time">01:24:49</div></td>
+    </tr>
+    <tr id="user-dinhduyviethungqb" >
+        <td>17</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/31-2020-vo-nguyen-giap-qung-binh">Võ Nguyên Giáp - Q.B</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/dinhduyviethungqb">dinhduyviethungqb</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2615">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2615/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/dinhduyviethungqb/goldbach/">100<div class="solving-time">00:22:53</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/dinhduyviethungqb/pig/">60<div class="solving-time">00:43:29</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">160<div class="solving-time">01:06:22</div></td>
+    </tr>
+    <tr id="user-Hoktro" >
+        <td>18</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/21-nguyn-du-djk-lk">Nguyễn Du - Đắk Lắk</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/Hoktro">Hoktro</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2624">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2624/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Hoktro/goldbach/">100<div class="solving-time">00:19:23</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/Hoktro/pig/">60<div class="solving-time">00:56:01</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">160<div class="solving-time">01:15:24</div></td>
+    </tr>
+    <tr id="user-tranthangusername" >
+        <td>19</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/tranthangusername">tranthangusername</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2523">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2523/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/tranthangusername/goldbach/">100<div class="solving-time">00:28:53</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/tranthangusername/pig/">60<div class="solving-time">01:04:40</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">160<div class="solving-time">01:33:34</div></td>
+    </tr>
+    <tr id="user-iambestfeed" >
+        <td>20</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/iambestfeed">iambestfeed</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2505">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2505/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/iambestfeed/goldbach/">100<div class="solving-time">00:11:04</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/iambestfeed/pig/">50<div class="solving-time">00:46:46</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/iambestfeed/robot/">5<div class="solving-time">00:58:36</div></a></td>
+        <td></td>
+    <td class="user-points">155<div class="solving-time">01:56:27</div></td>
+    </tr>
+    <tr id="user-tcm" >
+        <td>21</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/21-nguyn-du-djk-lk">Nguyễn Du - Đắk Lắk</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/tcm">tcm</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2581">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2581/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/tcm/goldbach/">100<div class="solving-time">00:35:45</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/tcm/pig/">50<div class="solving-time">00:38:16</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">150<div class="solving-time">01:14:01</div></td>
+    </tr>
+    <tr id="user-A518Backtrack" >
+        <td>22</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/A518Backtrack">A518Backtrack</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2582">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2582/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/A518Backtrack/goldbach/">100<div class="solving-time">00:12:02</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/A518Backtrack/pig/">40<div class="solving-time">00:42:26</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/A518Backtrack/robot/">0<div class="solving-time">00:54:47</div></a></td>
+        <td></td>
+    <td class="user-points">140<div class="solving-time">00:54:29</div></td>
+    </tr>
+    <tr id="user-whitemirror" >
+        <td>23</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/24-2020-le-thanh-tong-qung-nam">Lê Thánh Tông, Q.Nam</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/whitemirror">whitemirror</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2495">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2495/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/whitemirror/goldbach/">100<div class="solving-time">00:12:56</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/whitemirror/pig/">35<div class="solving-time">01:06:03</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">135<div class="solving-time">01:18:59</div></td>
+    </tr>
+    <tr id="user-valueking789" >
+        <td>24</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/valueking789">valueking789</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2617">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2617/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/valueking789/goldbach/">100<div class="solving-time">00:13:48</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/valueking789/pig/">25<div class="solving-time">00:30:38</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/valueking789/robot/">10<div class="solving-time">00:56:21</div></a></td>
+        <td></td>
+    <td class="user-points">135<div class="solving-time">01:40:47</div></td>
+    </tr>
+    <tr id="user-thaibao3303" >
+        <td>25</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/16-itk17nbk">K17 NBK</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/thaibao3303">thaibao3303</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2641">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2641/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/thaibao3303/goldbach/">100<div class="solving-time">00:28:31</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/thaibao3303/pig/">30<div class="solving-time">01:01:21</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">130<div class="solving-time">01:29:53</div></td>
+    </tr>
+    <tr id="user-nguyennhattruyen" >
+        <td>26</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/27-2020-lng-van-chanh-phu-yen">Lương Văn Chánh - PY</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/nguyennhattruyen">nguyennhattruyen</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2569">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2569/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nguyennhattruyen/goldbach/">100<div class="solving-time">00:28:29</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/nguyennhattruyen/pig/">30<div class="solving-time">01:01:59</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">130<div class="solving-time">01:30:29</div></td>
+    </tr>
+    <tr id="user-tranphuc1404" >
+        <td>27</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/24-2020-le-thanh-tong-qung-nam">Lê Thánh Tông, Q.Nam</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/tranphuc1404">tranphuc1404</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2489">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2489/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/tranphuc1404/goldbach/">100<div class="solving-time">00:15:36</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/tranphuc1404/pig/">25<div class="solving-time">00:36:08</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">125<div class="solving-time">00:51:45</div></td>
+    </tr>
+    <tr id="user-khoa101003" >
+        <td>28</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/khoa101003">khoa101003</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2579">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2579/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/khoa101003/goldbach/">100<div class="solving-time">00:08:51</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/khoa101003/pig/">25<div class="solving-time">00:47:12</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">125<div class="solving-time">00:56:03</div></td>
+    </tr>
+    <tr id="user-nhatminh2003" >
+        <td>29</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/nhatminh2003">nhatminh2003</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2629">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2629/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nhatminh2003/goldbach/">100<div class="solving-time">00:12:43</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/nhatminh2003/pig/">25<div class="solving-time">00:45:54</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">125<div class="solving-time">00:58:37</div></td>
+    </tr>
+    <tr id="user-deadpool1996" >
+        <td>30</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/12-caiwindao-fc">CWD FC</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/deadpool1996">deadpool1996</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2654">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2654/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/deadpool1996/goldbach/">100<div class="solving-time">00:38:33</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/deadpool1996/pig/">25<div class="solving-time">01:04:40</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">125<div class="solving-time">01:43:13</div></td>
+    </tr>
+    <tr id="user-nguyentrongnghia" >
+        <td>31</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/16-itk17nbk">K17 NBK</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/nguyentrongnghia">nguyentrongnghia</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2636">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2636/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nguyentrongnghia/goldbach/">100<div class="solving-time">01:09:13</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/nguyentrongnghia/pig/">25<div class="solving-time">01:05:55</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">125<div class="solving-time">02:15:09</div></td>
+    </tr>
+    <tr id="user-huanvhc" >
+        <td>32</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/16-itk17nbk">K17 NBK</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/huanvhc">huanvhc</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2661">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2661/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/huanvhc/goldbach/">100<div class="solving-time">01:07:05</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/huanvhc/pig/">25<div class="solving-time">01:10:22</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">125<div class="solving-time">02:17:28</div></td>
+    </tr>
+    <tr id="user-darkness1869" >
+        <td>33</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/darkness1869">darkness1869</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2492">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2492/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/darkness1869/goldbach/">100<div class="solving-time">00:41:10</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/darkness1869/pig/">20<div class="solving-time">00:56:07</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">120<div class="solving-time">01:37:17</div></td>
+    </tr>
+    <tr id="user-chulanpro5" >
+        <td>34</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/chulanpro5">chulanpro5</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2628">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2628/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/chulanpro5/goldbach/">100<div class="solving-time">00:37:21</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/chulanpro5/pig/">15<div class="solving-time">01:09:54</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">115<div class="solving-time">01:47:15</div></td>
+    </tr>
+    <tr id="user-hieupta518" >
+        <td>35</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/hieupta518">hieupta518</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2535">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2535/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/hieupta518/goldbach/">100<div class="solving-time">00:23:58</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/hieupta518/pig/">10<div class="solving-time">01:00:35</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">110<div class="solving-time">01:24:33</div></td>
+    </tr>
+    <tr id="user-ST_Phong" >
+        <td>36</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/ST_Phong">ST_Phong</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2504">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2504/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/ST_Phong/goldbach/">100<div class="solving-time">00:08:03</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:08:03</div></td>
+    </tr>
+    <tr id="user-I_love_you_my_girl" >
+        <td>37</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/I_love_you_my_girl">I_love_you_my_girl</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2462">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2462/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/I_love_you_my_girl/goldbach/">100<div class="solving-time">00:09:46</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/I_love_you_my_girl/pig/">0<div class="solving-time">00:36:29</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:09:46</div></td>
+    </tr>
+    <tr id="user-Duy" >
+        <td>38</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/Duy">Duy</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2533">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2533/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Duy/goldbach/">100<div class="solving-time">00:10:15</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/Duy/pig/">0<div class="solving-time">00:39:39</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:10:15</div></td>
+    </tr>
+    <tr id="user-sangbt" >
+        <td>39</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/sangbt">sangbt</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2584">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2584/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/sangbt/goldbach/">100<div class="solving-time">00:12:12</div></a></td>
+        <td></td>
+        <td></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/sangbt/virus/">0<div class="solving-time">01:05:11</div></a></td>
+    <td class="user-points">100<div class="solving-time">00:12:12</div></td>
+    </tr>
+    <tr id="user-nhanhuuhieulqdqt" >
+        <td>40</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/25-2020-le-quy-djon-qung-tr">Lê Quý Đôn - Q.Trị</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/nhanhuuhieulqdqt">nhanhuuhieulqdqt</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2611">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2611/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nhanhuuhieulqdqt/goldbach/">100<div class="solving-time">00:12:14</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:12:14</div></td>
+    </tr>
+    <tr id="user-NeutralBee" >
+        <td>41</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/NeutralBee">NeutralBee</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2602">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2602/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/NeutralBee/goldbach/">100<div class="solving-time">00:12:49</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:12:49</div></td>
+    </tr>
+    <tr id="user-ntanlqdqt" >
+        <td>42</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/25-2020-le-quy-djon-qung-tr">Lê Quý Đôn - Q.Trị</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/ntanlqdqt">ntanlqdqt</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2454">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2454/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/ntanlqdqt/goldbach/">100<div class="solving-time">00:12:50</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/ntanlqdqt/pig/">0<div class="solving-time">00:49:17</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:12:50</div></td>
+    </tr>
+    <tr id="user-ltt_lam" >
+        <td>43</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/24-2020-le-thanh-tong-qung-nam">Lê Thánh Tông, Q.Nam</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/ltt_lam">ltt_lam</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2541">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2541/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/ltt_lam/goldbach/">100<div class="solving-time">00:13:00</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:13:00</div></td>
+    </tr>
+    <tr id="user-VTL_phung" >
+        <td>44</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/VTL_phung">VTL_phung</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2507">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2507/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/VTL_phung/goldbach/">100<div class="solving-time">00:14:14</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:14:14</div></td>
+    </tr>
+    <tr id="user-anhnguyenroux" >
+        <td>45</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/23-hunh-mn-djt-kien-giang">Huỳnh Mẫn Đạt, K.G</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/anhnguyenroux">anhnguyenroux</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2608">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2608/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/anhnguyenroux/goldbach/">100<div class="solving-time">00:14:52</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/anhnguyenroux/pig/">0<div class="solving-time">01:07:14</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:14:52</div></td>
+    </tr>
+    <tr id="user-maitandat03" >
+        <td>46</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/maitandat03">maitandat03</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2551">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2551/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/maitandat03/goldbach/">100<div class="solving-time">00:15:29</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/maitandat03/pig/">0<div class="solving-time">00:49:09</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:15:29</div></td>
+    </tr>
+    <tr id="user-khoaihps" >
+        <td>47</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/khoaihps">khoaihps</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2538">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2538/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/khoaihps/goldbach/">100<div class="solving-time">00:16:28</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:16:28</div></td>
+    </tr>
+    <tr id="user-lelouvincx" >
+        <td>48</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/lelouvincx">lelouvincx</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2491">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2491/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/lelouvincx/goldbach/">100<div class="solving-time">00:19:16</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:19:16</div></td>
+    </tr>
+    <tr id="user-NPHUCTAN_GL" >
+        <td>49</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/NPHUCTAN_GL">NPHUCTAN_GL</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2600">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2600/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/NPHUCTAN_GL/goldbach/">100<div class="solving-time">00:20:09</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:20:09</div></td>
+    </tr>
+    <tr id="user-phuxuan9" >
+        <td>50</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/23-hunh-mn-djt-kien-giang">Huỳnh Mẫn Đạt, K.G</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/phuxuan9">phuxuan9</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2630">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2630/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/phuxuan9/goldbach/">100<div class="solving-time">00:21:42</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:21:42</div></td>
+    </tr>
+    <tr id="user-ST_Nhan" >
+        <td>50</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/ST_Nhan">ST_Nhan</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2550">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2550/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/ST_Nhan/goldbach/">100<div class="solving-time">00:21:42</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:21:42</div></td>
+    </tr>
+    <tr id="user-nqhoang11_cukuin" >
+        <td>52</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/21-nguyn-du-djk-lk">Nguyễn Du - Đắk Lắk</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-candidate-master user"><a href="/user/nqhoang11_cukuin">nqhoang11_cukuin</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2563">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2563/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nqhoang11_cukuin/goldbach/">100<div class="solving-time">00:22:36</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:22:36</div></td>
+    </tr>
+    <tr id="user-baopham" >
+        <td>53</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/23-hunh-mn-djt-kien-giang">Huỳnh Mẫn Đạt, K.G</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/baopham">baopham</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2638">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2638/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/baopham/goldbach/">100<div class="solving-time">00:22:54</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:22:54</div></td>
+    </tr>
+    <tr id="user-Maowonh" >
+        <td>54</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/31-2020-vo-nguyen-giap-qung-binh">Võ Nguyên Giáp - Q.B</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/Maowonh">Maowonh</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2609">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2609/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Maowonh/goldbach/">100<div class="solving-time">00:25:49</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:25:49</div></td>
+    </tr>
+    <tr id="user-cbl_thientho" >
+        <td>55</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/cbl_thientho">cbl_thientho</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2536">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2536/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/cbl_thientho/goldbach/">100<div class="solving-time">00:26:40</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/cbl_thientho/pig/">0<div class="solving-time">01:10:00</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:26:40</div></td>
+    </tr>
+    <tr id="user-qtuan" >
+        <td>56</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/qtuan">qtuan</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2517">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2517/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/qtuan/goldbach/">100<div class="solving-time">00:27:24</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/qtuan/pig/">0<div class="solving-time">00:45:29</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:27:24</div></td>
+    </tr>
+    <tr id="user-lethianhhongqb" >
+        <td>57</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/31-2020-vo-nguyen-giap-qung-binh">Võ Nguyên Giáp - Q.B</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/lethianhhongqb">lethianhhongqb</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2618">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2618/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/lethianhhongqb/goldbach/">100<div class="solving-time">00:28:14</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:28:14</div></td>
+    </tr>
+    <tr id="user-hhhoang" >
+        <td>58</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/hhhoang">hhhoang</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2573">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2573/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/hhhoang/goldbach/">100<div class="solving-time">00:28:40</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:28:40</div></td>
+    </tr>
+    <tr id="user-gianghia056" >
+        <td>59</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/gianghia056">gianghia056</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2646">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2646/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/gianghia056/goldbach/">100<div class="solving-time">00:29:37</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:29:37</div></td>
+    </tr>
+    <tr id="user-vanlinh_1904" >
+        <td>60</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/27-2020-lng-van-chanh-phu-yen">Lương Văn Chánh - PY</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/vanlinh_1904">vanlinh_1904</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2532">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2532/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/vanlinh_1904/goldbach/">100<div class="solving-time">00:29:53</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:29:53</div></td>
+    </tr>
+    <tr id="user-htrangtu" >
+        <td>61</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/27-2020-lng-van-chanh-phu-yen">Lương Văn Chánh - PY</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/htrangtu">htrangtu</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2570">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2570/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/htrangtu/goldbach/">100<div class="solving-time">00:30:05</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:30:05</div></td>
+    </tr>
+    <tr id="user-nguyenduchuyqb" >
+        <td>62</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/nguyenduchuyqb">nguyenduchuyqb</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2610">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2610/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nguyenduchuyqb/goldbach/">100<div class="solving-time">00:31:06</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:31:06</div></td>
+    </tr>
+    <tr id="user-nganngants" >
+        <td>63</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/nganngants">nganngants</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2474">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2474/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nganngants/goldbach/">100<div class="solving-time">00:31:15</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/nganngants/pig/">0<div class="solving-time">01:05:57</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:31:15</div></td>
+    </tr>
+    <tr id="user-dacphu" >
+        <td>64</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/27-2020-lng-van-chanh-phu-yen">Lương Văn Chánh - PY</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/dacphu">dacphu</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2520">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2520/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/dacphu/goldbach/">100<div class="solving-time">00:32:08</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/dacphu/pig/">0<div class="solving-time">00:57:45</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:32:08</div></td>
+    </tr>
+    <tr id="user-hdecsr" >
+        <td>65</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/16-itk17nbk">K17 NBK</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/hdecsr">hdecsr</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2651">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2651/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/hdecsr/goldbach/">100<div class="solving-time">00:32:39</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:32:39</div></td>
+    </tr>
+    <tr id="user-nguyenlak2003" >
+        <td>66</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/21-nguyn-du-djk-lk">Nguyễn Du - Đắk Lắk</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/nguyenlak2003">nguyenlak2003</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2604">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2604/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nguyenlak2003/goldbach/">100<div class="solving-time">00:32:45</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:32:45</div></td>
+    </tr>
+    <tr id="user-lqk" >
+        <td>67</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/lqk">lqk</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2572">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2572/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/lqk/goldbach/">100<div class="solving-time">00:33:02</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:33:02</div></td>
+    </tr>
+    <tr id="user-nhanbla20" >
+        <td>68</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/nhanbla20">nhanbla20</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2506">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2506/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/nhanbla20/goldbach/">100<div class="solving-time">00:34:10</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:34:10</div></td>
+    </tr>
+    <tr id="user-qp1109" >
+        <td>69</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/16-itk17nbk">K17 NBK</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/qp1109">qp1109</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2653">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2653/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/qp1109/goldbach/">100<div class="solving-time">00:35:27</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:35:27</div></td>
+    </tr>
+    <tr id="user-dotrungquan1100" >
+        <td>70</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/dotrungquan1100">dotrungquan1100</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2647">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2647/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/dotrungquan1100/goldbach/">100<div class="solving-time">00:35:54</div></a></td>
+        <td></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/dotrungquan1100/robot/">0<div class="solving-time">00:37:38</div></a></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:35:54</div></td>
+    </tr>
+    <tr id="user-phanminhquanqb" >
+        <td>71</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/31-2020-vo-nguyen-giap-qung-binh">Võ Nguyên Giáp - Q.B</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/phanminhquanqb">phanminhquanqb</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2620">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2620/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/phanminhquanqb/goldbach/">100<div class="solving-time">00:36:17</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:36:17</div></td>
+    </tr>
+    <tr id="user-ITK7_GKhanh" >
+        <td>72</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/24-2020-le-thanh-tong-qung-nam">Lê Thánh Tông, Q.Nam</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/ITK7_GKhanh">ITK7_GKhanh</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2478">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2478/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/ITK7_GKhanh/goldbach/">100<div class="solving-time">00:36:30</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:36:30</div></td>
+    </tr>
+    <tr id="user-htkha18tin" >
+        <td>73</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/32-2020-djong-nai">2020 Đông Nai</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/htkha18tin">htkha18tin</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2501">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2501/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/htkha18tin/goldbach/">100<div class="solving-time">00:37:22</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:37:22</div></td>
+    </tr>
+    <tr id="user-vmthu" >
+        <td>74</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/19-olp11">OLP MT &amp; TN Lớp 11</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/vmthu">vmthu</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2510">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2510/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/vmthu/goldbach/">100<div class="solving-time">00:38:16</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:38:16</div></td>
+    </tr>
+    <tr id="user-chauminhkhai" >
+        <td>75</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/27-2020-lng-van-chanh-phu-yen">Lương Văn Chánh - PY</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/chauminhkhai">chauminhkhai</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2645">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2645/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/chauminhkhai/goldbach/">100<div class="solving-time">00:38:40</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:38:40</div></td>
+    </tr>
+    <tr id="user-HC2k3" >
+        <td>76</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/16-itk17nbk">K17 NBK</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/HC2k3">HC2k3</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2644">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2644/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/HC2k3/goldbach/">100<div class="solving-time">00:40:40</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:40:40</div></td>
+    </tr>
+    <tr id="user-Duan27" >
+        <td>77</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/26-2020-le-quy-djon-binh-djnh">Lê Quý Đôn - B.Định</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/Duan27">Duan27</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2655">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2655/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/Duan27/goldbach/">100<div class="solving-time">00:41:30</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:41:30</div></td>
+    </tr>
+    <tr id="user-lcqhuyt1821" >
+        <td>78</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/25-2020-le-quy-djon-qung-tr">Lê Quý Đôn - Q.Trị</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/lcqhuyt1821">lcqhuyt1821</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2487">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2487/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/lcqhuyt1821/goldbach/">100<div class="solving-time">00:44:39</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:44:39</div></td>
+    </tr>
+    <tr id="user-lucitk7ltt" >
+        <td>79</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/24-2020-le-thanh-tong-qung-nam">Lê Thánh Tông, Q.Nam</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/lucitk7ltt">lucitk7ltt</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2540">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2540/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="full-score"><a href="/contest/centralolp11/submissions/lucitk7ltt/goldbach/">100<div class="solving-time">00:54:57</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/lucitk7ltt/pig/">0<div class="solving-time">00:54:28</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">100<div class="solving-time">00:54:57</div></td>
+    </tr>
+    <tr id="user-thanhdo_0711" >
+        <td>80</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/23-hunh-mn-djt-kien-giang">Huỳnh Mẫn Đạt, K.G</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-amateur user"><a href="/user/thanhdo_0711">thanhdo_0711</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2640">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2640/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/thanhdo_0711/goldbach/">75<div class="solving-time">00:29:35</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">75<div class="solving-time">00:29:35</div></td>
+    </tr>
+    <tr id="user-huynhsinh51" >
+        <td>81</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/5-khac">Khác</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-expert user"><a href="/user/huynhsinh51">huynhsinh51</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2524">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2524/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/huynhsinh51/goldbach/">50<div class="solving-time">01:03:56</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/huynhsinh51/pig/">25<div class="solving-time">01:03:42</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">75<div class="solving-time">02:07:39</div></td>
+    </tr>
+    <tr id="user-quocle" >
+        <td>82</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/21-nguyn-du-djk-lk">Nguyễn Du - Đắk Lắk</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/quocle">quocle</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2553">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2553/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/quocle/goldbach/">50<div class="solving-time">00:43:47</div></a></td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/quocle/pig/">15<div class="solving-time">01:09:16</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">65<div class="solving-time">01:53:04</div></td>
+    </tr>
+    <tr id="user-Hoang123" >
+        <td>83</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/23-hunh-mn-djt-kien-giang">Huỳnh Mẫn Đạt, K.G</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-none user"><a href="/user/Hoang123">Hoang123</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2606">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2606/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/Hoang123/goldbach/">50<div class="solving-time">00:27:13</div></a></td>
+        <td class="failed-score"><a href="/contest/centralolp11/submissions/Hoang123/pig/">0<div class="solving-time">00:45:14</div></a></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">50<div class="solving-time">00:27:13</div></td>
+    </tr>
+    <tr id="user-nnbxxx" >
+        <td>84</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/21-nguyn-du-djk-lk">Nguyễn Du - Đắk Lắk</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/nnbxxx">nnbxxx</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2625">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2625/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/nnbxxx/goldbach/">50<div class="solving-time">00:28:55</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">50<div class="solving-time">00:28:55</div></td>
+    </tr>
+    <tr id="user-binphuc03tk" >
+        <td>85</td>
+    <td class="organization-column">
+            <span class="organization"><a href="/organization/16-itk17nbk">K17 NBK</a></span>
+    </td>
+        <td class="user-name"><span class="rating rate-newbie user"><a href="/user/binphuc03tk">binphuc03tk</a></span>        <span class="contest-participation-operation">
+            <form action="/contest/centralolp11/participation/disqualify" method="post">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />                <input type="hidden" name="participation" value="2657">
+                    <a href="#" title="Disqualify"
+                       class="disqualify-participation"><i class="fa fa-trash fa-fw"></i></a>
+            </form>
+                <a href="/admin/judge/contestparticipation/2657/change/"
+                   title="Admin" class="edit-participation"><i class="fa fa-cog fa-fw"></i></a>
+        </span>
+</td>
+        <td class="partial-score"><a href="/contest/centralolp11/submissions/binphuc03tk/goldbach/">50<div class="solving-time">00:42:27</div></a></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    <td class="user-points">50<div class="solving-time">00:42:27</div></td>
+    </tr>
+</tbody>            </table>
+
+        </div>
+    </div>
+</div>
+    </main>
+
+
+<script type="text/javascript" src="/static/mathjax_config.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML"></script>
+<script type="text/javascript">
+    window.reload_mathjax = function () {
+        MathJax.Hub.queue.Push(function () {
+            $('.tex-image').hide();
+            $('.tex-text').show();
+        });
+    };
+    window.reload_mathjax();
+</script>
+    <footer>
+        <span id="footer-content">
+            <br>
+            <a style="color: #808080" target="_blank" href="https://dmoj.ca">proudly powered by <b>DMOJ</b></a><a target="_blank" href="https://github.com/LQDJudge/online-judge"> | developed by LQDJudge team</a> |
+            <form action="/i18n/setlang/" method="post" style="display: inline">
+<input type='hidden' name='csrfmiddlewaretoken' value='8PONmJN2Fw3FTx92hJY5OfSr4qhIOohdP4xqowSn3iXX4uxIVKFUzxZNiK1pGvBy' />            <input name="next" type="hidden" value="/contest/centralolp11/ranking/">
+            <select name="language" onchange="form.submit()" style="height: 1.5em">
+                    <option value="de" >
+                        Deutsch (de)
+                    </option>
+                    <option value="en" selected>
+                        English (en)
+                    </option>
+                    <option value="es" >
+                        español (es)
+                    </option>
+                    <option value="fr" >
+                        français (fr)
+                    </option>
+                    <option value="hr" >
+                        Hrvatski (hr)
+                    </option>
+                    <option value="hu" >
+                        Magyar (hu)
+                    </option>
+                    <option value="ja" >
+                        日本語 (ja)
+                    </option>
+                    <option value="ko" >
+                        한국어 (ko)
+                    </option>
+                    <option value="pt" >
+                        Português (pt)
+                    </option>
+                    <option value="ro" >
+                        Română (ro)
+                    </option>
+                    <option value="ru" >
+                        Русский (ru)
+                    </option>
+                    <option value="sr-latn" >
+                        srpski (latinica) (sr-latn)
+                    </option>
+                    <option value="tr" >
+                        Türkçe (tr)
+                    </option>
+                    <option value="vi" >
+                        Tiếng Việt (vi)
+                    </option>
+                    <option value="zh-hans" >
+                        简体中文 (zh-hans)
+                    </option>
+                    <option value="zh-hant" >
+                        繁體中文 (zh-hant)
+                    </option>
+            </select>
+          </form>
+        </span>
+    </footer>
+</div>
+</body>
+</html>
